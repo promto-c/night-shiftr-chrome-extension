@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-12 -12 36 32" stroke-width="1" stroke="#000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="12" y1="3" x2="12" y2="21">
+      <stop stop-color="#2c5364" offset="0"/>
+      <stop stop-color="#203a43" offset=".5"/>
+      <stop stop-color="#0f2027" offset="1"/>
+    </linearGradient>
+    <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="14" y1="7" x2="14" y2="17">
+      <stop stop-color="#fdc830" offset="0"/>
+      <stop stop-color="#f37335" offset="1"/>
+    </linearGradient>
+        <filter id="blurFilter" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="0, 0">
+            <animate attributeName="stdDeviation" 
+                     values="2, 0; 0, 0; 0.5, 0; 5, 0"
+                     dur="6s" 
+                     repeatCount="indefinite"
+                     keyTimes="0; 0.1667; 0.99; 1"
+                     keySplines="0.42,0,0.58,1; 0.42,0,0.58,1; 0.42,0,0.58,1"/>
+        </feGaussianBlur>
+        </filter>
+  </defs>
+  <g filter="url(#blurFilter)">
+    <path d="M12 21c-5.105 0-9.244-4.029-9.244-9S6.895 3 12 3c3.712 0 6.913 2.13 8.383 5.204a1.936 1.936 0 0 0-.075-.011 7.33 7.33 0 0 0-6.181-3.348c-4.038 0-7.312 3.219-7.312 7.19 0 3.971 3.274 7.19 7.312 7.19a7.334 7.334 0 0 0 6.23-3.425l.027-.004C18.914 18.87 15.712 21 12 21z" fill="url(#a)" fill-opacity=".5"/>
+    <path d="M14.587 16.597c-2.582 0-4.675-2.058-4.675-4.598 0-2.537 2.093-4.596 4.675-4.596 1.273 0 2.427.5 3.27 1.312a3.84 3.84 0 0 0 0 6.57 4.7 4.7 0 0 1-3.27 1.312z" fill="url(#b)" fill-opacity=".5"/>
+      <animateTransform attributeName="transform"
+                    type="translate"
+                    values="-5 0; 0 0; -1 0; -5 0"
+                    dur="6s"
+                    repeatCount="indefinite"
+                    calcMode="spline"
+                    keyTimes="0; 0.1667; 0.99; 1"
+                    keySplines="0.42,0,0.58,1; 0.42,0,0.58,1; 0.42,0,0.58,1"/>
+      <animate attributeName="opacity"
+               values="0.2; 1; 1; 0.2"
+               dur="6s"
+               repeatCount="indefinite"
+               calcMode="spline"
+               keyTimes="0; 0.1667; 0.99; 1"
+               keySplines="0.42,0,0.58,1; 0.42,0,0.58,1; 0.42,0,0.58,1"/>
+  </g>
+</svg>
